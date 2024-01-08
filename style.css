@@ -32,7 +32,7 @@ hr{
 
 .container .dates-info{
     font-size: 20px;
-    color: blue;
+    color: #15616D;
 }
 
 .container .title{
@@ -104,7 +104,7 @@ input[type="radio"]:checked {
 }
 
 select option {
-    background-color: #bdd7ba; /* Background color of options */
+    background-color: #bdd7ba;
 }
 
 form .dropdown select{
