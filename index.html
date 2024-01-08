@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dtaes Information -->
+        <div class="dates-info">
+            <p><strong>Registration Closing Date:</strong> January 15, 2024</p>
+            <p><strong>Competition Date:</strong> January 27, 2024</p>
+        </div>
 
+        <div class="title"> 
+            <h1>Inter-School Sports Competition Registration</h1>
+            <hr>
+        </div>
+
+        <form action="#">
+
+            <!-- Student Details -->
+            <div class="studentDetails">
+                <div class="input-box">
+                    <span class="details">Full Name:</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email:</span>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number:</span>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>        
+                </div>
+                <div class="input-box">
+                    <span class="details">Admission Number:</span>
+                    <input type="text" id="admissionNo" name="admissionNo" placeholder="Enter your admission number" required>
+                </div>
+            </div>
+
+            <!-- DOB Details -->
+            <div class="dobDetails box">
+                <div class="input-box">
+                    <span class="details">Date of Birth:</span>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+            <!-- Gender Details -->
+            <div class="genderDetails box">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            
+                <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay" required>
+                <label for="preferNotToSay">Prefer not to say</label>
+            </div>
+            
+            <!-- Class Details -->
+            <div class="dropdown box">
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                    <option value="" disabled selected>Select class</option>
+                    <option value="9">Class 9</option>
+                    <option value="10">Class 10</option>
+                    <option value="11">Class 11</option>
+                    <option value="12">Class 12</option>
+                </select>
+            </div>
+                
+            <!-- Sports Selection Detail -->
+            <div id="sport" class="dropdown box">
+                <label for="sport">Select a Sport:</label>
+                <select id="sport" name="selectedSport" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="badmintonSolo">Badminton (Singles)</option>
+                    <option value="badmintonDual">Badminton (Doubles)</option>
+                    <option value="tableTennis">Table Tennis</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="chess">Chess</option>
+                    <option value="archery">Archery</option>
+                </select>
+            </div>
+           
+            <!-- Submit Button -->
+            <div class="button box">
+                <input type="submit" value="Submit Registration">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

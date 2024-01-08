@@ -1,1 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(to right, #bdd7ba, #ADD8E6);
+}
+
+hr{
+    border: 1px solid #bdd7ba;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 30px;
+}
+
+.container .dates-info{
+    font-size: 20px;
+    color: blue;
+}
+
+.container .title{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px;
+    position: relative;
+}
+
+.container form .studentDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+form .studentDetails .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 10px;
+}
+
+.studentDetails .input-box .details{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.studentDetails .input-box input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1rem;
+    border-bottom-width: 2px;
+}
+
+.studentDetails .input-box input:focus,
+.studentDetails .input-box input:valid{
+    border-color: #ADD8E6;
+}
+
+form .dobDetails input{
+    height: 30px;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1rem;
+    border-bottom-width: 2px;
+}
+
+form .genderDetails input{
+    margin-left: 15px;
+}
+
+input[type="radio"] {
+    appearance: none; 
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #ADD8E6; 
+    border-radius: 50%; 
+    outline: none; 
+    cursor: pointer;
+}
+  
+input[type="radio"]:checked {
+    background-color: #bdd7ba;
+}
+
+select option {
+    background-color: #bdd7ba; /* Background color of options */
+}
+
+form .dropdown select{
+    height: 30px;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1rem;
+    border-bottom-width: 2px;
+}
+
+#sport select{
+    width: 80%;
+}
+
+.box{
+    margin-bottom: 15px;
+}
