@@ -41,60 +41,65 @@
                 </div>
             </div>
 
-            <!-- DOB Details -->
-            <div class="dobDetails box">
-                <div class="input-box">
-                    <span class="details">Date of Birth:</span>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-            </div>
-
-            <!-- Gender Details -->
-            <div class="genderDetails box">
-                <div>
-                    <label>Gender:</label> 
-                </div>
-                <div>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label>
-            
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-            
-                    <input type="radio" id="others" name="gender" value="others" required>
-                    <label for="others">Others</label>
-                </div>
-            </div>
-            
-            <!-- Class Details -->
-            <div class="dropdown box">
-                <label for="class">Class:</label>
-                <select id="class" name="class" required>
-                    <option value="" disabled selected>Select class</option>
-                    <option value="9">Class 9</option>
-                    <option value="10">Class 10</option>
-                    <option value="11">Class 11</option>
-                    <option value="12">Class 12</option>
-                </select>
-            </div>
+            <!-- DOB and Gender Details -->
+            <div class="dobGenderInfo">
+                <!-- DOB Details -->
+                <div class="dobDetails box">
+                    <div class="input-box">
+                        <span class="details">Date of Birth:</span>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>  
+                <!-- Gender Details -->
+                <div class="genderDetails box">
+                    <div>
+                        <label>Gender:</label> 
+                    </div>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
                 
-            <!-- Sports Selection Detail -->
-            <div id="sport" class="dropdown box">
-                <label for="sport">Select a Sport:</label>
-                <select id="sport" name="selectedSport" required>
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="football">Football</option>
-                    <option value="basketball">Basketball</option>
-                    <option value="volleyball">Volleyball</option>
-                    <option value="badmintonSolo">Badminton (Singles)</option>
-                    <option value="badmintonDual">Badminton (Doubles)</option>
-                    <option value="tableTennis">Table Tennis</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="chess">Chess</option>
-                    <option value="archery">Archery</option>
-                </select>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                
+                        <input type="radio" id="others" name="gender" value="others" required>
+                        <label for="others">Others</label>
+                    </div>
+                </div>
+            </div>           
+            
+            <!-- Class and Sport Details -->
+            <div class="classSportInfo">
+                <!-- Class Details -->
+                <div class="dropdown box">
+                    <label for="class">Class:</label>
+                    <select id="class" name="class" required>
+                        <option value="" disabled selected>Select class</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+                        <option value="11">Class 11</option>
+                        <option value="12">Class 12</option>
+                    </select>
+                </div>
+                    
+                <!-- Sports Selection Detail -->
+                <div class="dropdown box">
+                    <label for="sport">Select a Sport:</label>
+                    <select id="sport" name="selectedSport" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="badmintonSolo">Badminton (Singles)</option>
+                        <option value="badmintonDual">Badminton (Doubles)</option>
+                        <option value="tableTennis">Table Tennis</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="chess">Chess</option>
+                        <option value="archery">Archery</option>
+                    </select>
+                </div>
             </div>
-           
+                  
             <div class="button">
                 <!-- Submit Button -->
                 <input type="submit" value="Register">
