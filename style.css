@@ -75,6 +75,10 @@ form .studentDetails .input-box{
     border-color: #ADD8E6;
 }
 
+.box{
+    margin-bottom: 15px;
+}
+
 form .dobDetails input{
     height: 40px;
     width: 25%;
@@ -124,10 +128,6 @@ form .dropdown select{
 
 #sport select{
     width: 90%;
-}
-
-.box{
-    margin-bottom: 15px;
 }
 
 form .button{
