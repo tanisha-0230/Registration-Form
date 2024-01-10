@@ -173,7 +173,7 @@ form .button input:hover{
     }
     .container{
         max-width: 100%;
-        margin: 10px 0;
+        margin: 5px 0;
         border-radius: 0;
     }
     .container .dates-info{
@@ -198,7 +198,7 @@ form .button input:hover{
     }  
     form .dobDetails input{
         height: 25px;
-        width: 55%;
+        width: 80%;
         padding-left: 2px;
         font-size: 14px;
     }
