@@ -37,7 +37,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Admission Number:</span>
-                    <input type="text" id="admissionNo" name="admissionNo" placeholder="Enter your admission number" required>
+                    <input type="number" id="admissionNo" name="admissionNo" placeholder="Enter your admission no." min="1000" max="9999" required>
                 </div>
             </div>
 
@@ -51,15 +51,19 @@
 
             <!-- Gender Details -->
             <div class="genderDetails box">
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
+                <div>
+                    <label>Gender:</label> 
+                </div>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
             
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
             
-                <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay" required>
-                <label for="preferNotToSay">Prefer not to say</label>
+                    <input type="radio" id="others" name="gender" value="others" required>
+                    <label for="others">Others</label>
+                </div>
             </div>
             
             <!-- Class Details -->
@@ -91,9 +95,11 @@
                 </select>
             </div>
            
-            <!-- Submit Button -->
-            <div class="button box">
-                <input type="submit" value="Submit Registration">
+            <div class="button">
+                <!-- Submit Button -->
+                <input type="submit" value="Register">
+                <!-- Reset Button -->
+                <input type="reset" value="Reset">
             </div>
         </form>
     </div>
