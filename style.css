@@ -31,15 +31,15 @@ hr{
 }
 
 .container .dates-info{
-    font-size: 20px;
+    font-size: 18px;
     color: #15616D;
+    margin-top: 30px;
 }
 
 .container .title{
     font-size: 15px;
     font-weight: 300;
     padding: 5px;
-    position: relative;
 }
 
 .container form .studentDetails{
@@ -76,12 +76,18 @@ form .studentDetails .input-box{
 }
 
 .box{
-    margin-bottom: 15px;
+    margin-bottom: 3px;
+}
+
+form .dobGenderInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 form .dobDetails input{
     height: 40px;
-    width: 25%;
+    width: 55%;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left: 15px;
@@ -91,12 +97,16 @@ form .dobDetails input{
 
 form .genderDetails{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 
-form .genderDetails label{
-    margin-right: 80px;
+form .genderDetails input{
+    margin-left: 5px;
 }
+  
+form .genderDetails label{
+    margin-right: 5px;
+}  
 
 input[type="radio"] {
     appearance: none; 
@@ -112,22 +122,24 @@ input[type="radio"]:checked {
     background-color: #bdd7ba;
 }
 
+form .classSportInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 select option {
     background-color: #bdd7ba;
 }
 
 form .dropdown select{
     height: 40px;
-    width: 25%;
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #ccc;
-    padding-left: 15px;
+    padding-left: 5px;
     font-size: 1rem;
     border-bottom-width: 2px;
-}
-
-#sport select{
-    width: 90%;
 }
 
 form .button{
@@ -135,7 +147,7 @@ form .button{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 50px;
-    margin: 30px 0 10px 0;
+    margin: 30px 0;
 }
 
 form .button input{
@@ -145,7 +157,7 @@ form .button input{
     color: #15616D;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
     background: linear-gradient(to right, #bdd7ba, #ADD8E6);
@@ -156,25 +168,49 @@ form .button input:hover{
 }
 
 @media (max-width:584px) {
+    body{
+        font-size: 14px;
+    }
     .container{
         max-width: 100%;
+        margin: 10px 0;
+        border-radius: 0;
+    }
+    .container .dates-info{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .container .title{
+        font-size: 12px;
+        font-weight: 200;
+        padding: 0px;
     }
     form .studentDetails .input-box{
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .studentDetails .input-box input{
+        height: 25px;
+        font-size: 14px;
     }
     form .genderDetails input{
         margin-left: 5px;
     }  
-    form .genderDetails label{
-        margin-right: 0;
-    }  
     form .dobDetails input{
-        width: 50%;
+        height: 25px;
+        width: 55%;
         padding-left: 2px;
         font-size: 14px;
     }
     form .dropdown select{
-        width: 60%;
-    } 
+        height: 25px;
+        font-size: 14px;
+    }
+    form .button{
+        height: 25px;
+        margin: 10px 0;
+    }
+    form .button input{
+        font-size: 15px;
+    }
 }
