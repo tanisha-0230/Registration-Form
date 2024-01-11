@@ -173,8 +173,6 @@ form .button input:hover{
     }
     .container{
         max-width: 100%;
-        margin: 5px 0;
-        border-radius: 0;
     }
     .container .dates-info{
         font-size: 14px;
